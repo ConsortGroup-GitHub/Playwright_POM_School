@@ -9,6 +9,13 @@ export class LoginPage {
     
     }
 
+
+    async AccessToURL(myURL){
+
+        await this.page.goto(myURL)
+
+    }
+
     async login(username, password){
         // console.log(username);
         // console.log(password);
