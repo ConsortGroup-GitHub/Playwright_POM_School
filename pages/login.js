@@ -17,13 +17,10 @@ export class LoginPage {
     }
 
     async login(username, password){
-        // console.log(username);
-        // console.log(password);
+        // console.log("Le Username que je vais saisir est : " + username);
+        // console.log("Le Password que je vais saisir est : " + password);
         await this.username_textbox.fill(username)
         await this.password_textbox.fill(password)
         await this.login_button.click()
-
     }
-
 }
-
