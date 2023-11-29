@@ -9,16 +9,11 @@ export class LoginPage {
     
     }
 
-
-    async AccessToURL(myURL){
-
+    async Given_I_Access_to_my_website(myURL){
         await this.page.goto(myURL)
-
     }
 
     async login(username, password){
-        // console.log("Le Username que je vais saisir est : " + username);
-        // console.log("Le Password que je vais saisir est : " + password);
         await this.username_textbox.fill(username)
         await this.password_textbox.fill(password)
         await this.login_button.click()
